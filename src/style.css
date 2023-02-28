@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  :root {
+    --body: #fff;
+    /*--text-rose-default: rgb(166, 51, 82);*/
+    /*--background-rose-strong: rgb(252, 4, 165);*/
+    /*--background-rose-default: rgba(217, 145, 158, 0.5);*/
+    /*--background-rose-smooth: rgba(242, 206, 206, 0.2);*/
+  }
+
+  .social-icons a img {
+    @apply drop-shadow-sm hover:transition-all;
+    /*no hover: filter: drop-shadow(0 0 0.95rem var(--background-rose-strong));*/
+  }
+
+  .header-second-content {
+    @apply flex h-[3.875rem] w-full items-center justify-around truncate py-[2.5rem] px-[5rem] shadow;
+  }
+
+  .main-navigation {
+    @apply flex items-center justify-between;
+  }
+
+  .main-navigation ul {
+    @apply flex items-center justify-center;
+  }
+
+  .main-navigation ul li a {
+    @apply rounded-lg p-2 font-medium leading-6 text-rose-text;
+    @apply hover:bg-rose-strong hover:text-white hover:transition-all;
+  }
+
+  body {
+    @apply bg-background/10;
+  }
+  #menu-menu-principal .menu-item {
+    /*.item-de-menu {*/
+    @apply block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-primary-500;
+  }
+
+  #menu-menu-principal .current-menu-item {
+    /*.item-de-menu-ativo {*/
+    @apply !text-primary-600 dark:!text-primary-500 dark:hover:!text-primary-500;
+  }
+
+  #menu-sobre-o-geeon .menu-item {
+    @apply mb-4;
+  }
+
+  #menu-sobre-o-geeon .menu-item > a {
+    @apply hover:underline;
+  }
+
+  #formulario-contato {
+    @apply mx-auto grid max-w-screen-md grid-cols-1 gap-8 sm:grid-cols-2;
+  }
+
+  #formulario-contato > p {
+    @apply [&:nth-child(6)]:sm:col-span-2;
+  }
+
+  #formulario-contato br {
+    @apply inline leading-[0];
+  }
+
+  .name-label {
+    @apply block text-sm font-medium text-gray-900 dark:text-gray-300;
+  }
+
+  .name-input {
+    @apply mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm-light dark:focus:border-primary-500 dark:focus:ring-primary-500;
+  }
+
+  .email-label {
+    @apply name-label;
+  }
+
+  .email-input {
+    @apply name-input;
+  }
+
+  .tel-label {
+    @apply name-label;
+  }
+
+  .tel-input {
+    @apply name-input;
+  }
+
+  .subject-label {
+    @apply name-label;
+  }
+
+  .subject-input {
+    @apply mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:shadow-sm-light dark:focus:border-primary-500 dark:focus:ring-primary-500;
+  }
+
+  p.message-label {
+    @apply sm:col-span-2;
+  }
+
+  .message-label {
+    @apply name-label;
+  }
+
+  .message-textarea {
+    @apply mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500;
+  }
+
+  .submit-button {
+    @apply rounded-lg bg-primary-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:w-fit;
+  }
+
+  /* mensagens de erro de validação */
+  .wpcf7-not-valid-tip {
+    @apply mt-2 text-sm text-red-600 dark:text-red-500;
+    @apply block;
+  }
+
+  .wpcf7-response-output {
+    @apply wpcf7-not-valid-tip border text-base;
+  }
+
+  .wpcf7-not-valid {
+    @apply block w-full rounded-lg border border-red-500 bg-red-50 p-2.5 text-sm text-red-900 placeholder-red-700 focus:border-red-500 focus:ring-red-500 dark:border-red-400 dark:bg-red-100;
+  }
+
+  .screen-reader-response {
+    @apply hidden;
+  }
+}
