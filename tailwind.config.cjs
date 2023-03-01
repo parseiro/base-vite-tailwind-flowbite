@@ -14,6 +14,9 @@ module.exports = {
       },
     },
     extend: {
+      opacity: {
+        '15': '.15',
+      },
       darkMode: "class",
       colors: {
         cinza: {
@@ -23,8 +26,9 @@ module.exports = {
           75: "#152D32",
           100: "#001C22",
         },
-        background: "#F2CECE",
         rose: {
+          background:"rgb(242 206 206 / <alpha-value)",
+          background2: "rgb(217, 145, 158)",
           text: "rgb(166 51 82)",
           default: "rgb(166 51 82 / <alpha-value>)",
           strong: "rgb(252 4 165 / <alpha-value>)",

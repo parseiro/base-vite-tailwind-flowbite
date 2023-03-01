@@ -11,7 +11,7 @@
       --background-rose-smooth: rgba(242, 206, 206, 0.2);
     }*/
   body {
-    @apply bg-background/[15];
+    @apply bg-rose-background bg-opacity-15;
   }
 
   #menu-menu-principal .menu-item {
