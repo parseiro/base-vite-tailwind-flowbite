@@ -3,39 +3,17 @@
 @tailwind utilities;
 
 @layer components {
-  :root {
-    --body: #fff;
-    /*--text-rose-default: rgb(166, 51, 82);*/
-    /*--background-rose-strong: rgb(252, 4, 165);*/
-    /*--background-rose-default: rgba(217, 145, 158, 0.5);*/
-    /*--background-rose-smooth: rgba(242, 206, 206, 0.2);*/
-  }
-
-  .social-icons a img {
-    @apply drop-shadow-sm hover:transition-all;
-    /*no hover: filter: drop-shadow(0 0 0.95rem var(--background-rose-strong));*/
-  }
-
-  .header-second-content {
-    @apply flex h-[3.875rem] w-full items-center justify-around truncate py-[2.5rem] px-[5rem] shadow;
-  }
-
-  .main-navigation {
-    @apply flex items-center justify-between;
-  }
-
-  .main-navigation ul {
-    @apply flex items-center justify-center;
-  }
-
-  .main-navigation ul li a {
-    @apply rounded-lg p-2 font-medium leading-6 text-rose-text;
-    @apply hover:bg-rose-strong hover:text-white hover:transition-all;
-  }
-
+  /*:root {
+      --body: #fff;
+      --text-rose-default: rgb(166, 51, 82);
+      --background-rose-strong: rgb(252, 4, 165);
+      --background-rose-default: rgba(217, 145, 158, 0.5);
+      --background-rose-smooth: rgba(242, 206, 206, 0.2);
+    }*/
   body {
-    @apply bg-background/10;
+    @apply bg-background/[15];
   }
+
   #menu-menu-principal .menu-item {
     /*.item-de-menu {*/
     @apply block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-primary-500;
@@ -44,6 +22,14 @@
   #menu-menu-principal .current-menu-item {
     /*.item-de-menu-ativo {*/
     @apply !text-primary-600 dark:!text-primary-500 dark:hover:!text-primary-500;
+  }
+
+  .menu-item-ul {
+    @apply mt-4 hidden p-4 text-xl md:mt-0 md:flex md:flex-row md:items-center md:justify-center md:space-x-8 md:border-0;
+  }
+
+  .menu-item-button {
+    @apply block rounded-lg py-2 pl-3 pr-4 text-center text-rose-text hover:bg-rose-strong hover:text-white hover:transition-all md:border-0;
   }
 
   #menu-sobre-o-geeon .menu-item {
