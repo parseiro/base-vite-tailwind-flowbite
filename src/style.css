@@ -4,14 +4,14 @@
 
 @layer components {
   /*:root {
-      --body: #fff;
-      --text-rose-default: rgb(166, 51, 82);
-      --background-rose-strong: rgb(252, 4, 165);
-      --background-rose-default: rgba(217, 145, 158, 0.5);
-      --background-rose-smooth: rgba(242, 206, 206, 0.2);
-    }*/
+                --body: #fff;
+                --text-rose-default: rgb(166, 51, 82);
+                --background-rose-strong: rgb(252, 4, 165);
+                --background-rose-default: rgba(217, 145, 158, 0.5);
+                --background-rose-smooth: rgba(242, 206, 206, 0.2);
+              }*/
   body {
-    @apply mx-auto max-w-screen-xl bg-rose-background bg-opacity-15;
+    @apply mx-auto max-w-screen-xl bg-rose-smooth bg-opacity-15;
   }
 
   #menu-menu-principal .menu-item {
@@ -116,5 +116,33 @@
 
   .screen-reader-response {
     @apply hidden;
+  }
+
+  .titulo_de_secao {
+    @apply text-7xl font-bold text-rose-default;
+  }
+
+  #servicos_medicos {
+    @apply flex flex-col items-center justify-center gap-[11px] bg-rose-smooth bg-opacity-50;
+  }
+
+  /*  #servicos_medicos > * {
+    @apply format lg:format-lg;
+  }*/
+
+  #servicos_medicos > div {
+    @apply flex items-center justify-center;
+  }
+
+  #servicos_medicos > div > div > p {
+    @apply max-w-screen-md text-rose-text;
+  }
+
+  #servicos_medicos > div > div > h3 {
+    @apply text-2xl font-bold text-rose-titulo_sessao;
+  }
+
+  #servicos_medicos > div > img {
+    @apply mr-7 ml-[10px] h-[159px] w-[152px];
   }
 }
