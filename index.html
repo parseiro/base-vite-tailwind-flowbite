@@ -5,8 +5,8 @@
     <!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GEEON</title>
-    <script type="module" crossorigin src="/base-vite-tailwind-flowbite/assets/index-99d54d80.js"></script>
-    <link rel="stylesheet" href="/base-vite-tailwind-flowbite/assets/index-d4a538b5.css">
+    <script type="module" crossorigin src="/base-vite-tailwind-flowbite/assets/index-f7a131ef.js"></script>
+    <link rel="stylesheet" href="/base-vite-tailwind-flowbite/assets/index-13d1d368.css">
   </head>
   <body>
     <header>
@@ -111,8 +111,10 @@
           </a>
         </figure>
 
-        <div class="flex items-center justify-between">
-          <ul class="menu-item-ul">
+        <div id="navbar-inferior" class="flex items-center justify-between">
+          <ul
+            class="mt-4 hidden p-4 text-base md:mt-0 md:block md:flex md:flex-row md:items-center md:justify-center md:space-x-8 md:border-0 md:text-lg lg:text-xl"
+          >
             <li>
               <a href="#" class="menu-item-button">Projetos</a>
             </li>
@@ -135,22 +137,37 @@
     </header>
     <main>
       <!-- Banner -->
-      <!--<section class="secao h-[325px] w-full bg-rose-background2 bg-opacity-50">
+      <section class="secao h-[325px]">
         <div
-          class="mt-[0.5rem] flex h-[20.313rem] w-full items-center justify-center bg-rose-default bg-opacity-50"
+          class="margenzinha w-full bg-rose-background2 bg-opacity-50 py-10 md:grid md:grid-cols-12 md:items-center md:overflow-clip md:p-0"
         >
-          <div class="first-banner-card">
-            <h1>GEEON</h1>
-            <p>Na luta contra o câncer de mama</p>
-            <a href="#">Saiba mais</a>
+          <div class="flex flex-col items-center justify-center md:col-span-9">
+            <div class="relative border-blue-700">
+              <!--            <img src="src/img/GEE%20N.svg" alt="GEEON" class="relative" />
+                        <img
+                          src="src/img/logo-icon.png"
+                          alt=""
+                          class="absolute left-[130px] top-[-20px] w-[90px]"
+                        />-->
+              <img
+                src="/base-vite-tailwind-flowbite/assets/na-luta-c638de62.svg"
+                alt=""
+                class="relative w-full max-w-[538px]"
+              />
+            </div>
+            <!--<a href="#">Saiba mais</a>-->
           </div>
-          <img src="src/thumb-cancer-fight.png" alt="thumb-cancer-fight" />
+          <img
+            src="/base-vite-tailwind-flowbite/assets/thumb-cancer-fight-1e61b205.png"
+            alt="thumb-cancer-fight"
+            class="hidden h-full w-auto md:col-span-3 md:block"
+          />
         </div>
-      </section>-->
+      </section>
       <section id="missao" class="secao">
         <article class="margenzinha flex flex-col items-center justify-between">
           <img
-            src="/base-vite-tailwind-flowbite/assets/logo-icon-054d6013.png"
+            src="/base-vite-tailwind-flowbite/assets/logo-icon-339e12e4.png"
             alt="Logo da Geeon"
             class="not-format"
           />
@@ -171,7 +188,7 @@
       </section>
       <section id="servicos_medicos" class="secao margenzinha">
         <img
-          src="/base-vite-tailwind-flowbite/assets/logo-icon-054d6013.png"
+          src="/base-vite-tailwind-flowbite/assets/logo-icon-339e12e4.png"
           alt="Logo da Geeon"
           class="not-format"
         />
@@ -194,7 +211,7 @@
               precocemente o câncer de mama, antes mesmo que a mulher tenha
               sintomas. Estima-se que de 1 a cada 10 mulheres desenvolvem o
               câncer de mama em algum momento da vida. No ano de 2022 foram
-              realizadas 8.768 mamografias
+              realizadas 8.768 mamografias.
             </p>
           </div>
         </article>
@@ -206,7 +223,7 @@
               mamárias. Portanto, tudo o que for relacionado com as mamas é
               tratado pelo médico mastologista. Isso inclui quaisquer condições
               que possam afetar os seios, como dores, inchaços, infecções e,
-              claro, o câncer. No ano de 2022 foram realizadas 7.091 consultas
+              claro, o câncer. No ano de 2022 foram realizadas 7.091 consultas.
             </p>
           </div>
           <img
@@ -227,7 +244,7 @@
               A biópsia é um exame que consiste na retirada de um fragmento de
               uma parte do corpo (biópsia incisional) ou mesmo de um órgão ou
               lesão como um todo (biópsia excisional). No ano de 2022 foram
-              realizadas 908 Biópsia e punções
+              realizadas 908 Biópsia e punções.
             </p>
           </div>
         </article>
@@ -239,7 +256,7 @@
               recorrente na medicina moderna que utiliza o eco gerado através de
               ondas ultrassônicas de alta frequência para visualizar, em tempo
               real. No ano de 2022 foram realizadas 775 Ultrassonografias
-              Mamárias
+              Mamárias.
             </p>
           </div>
           <img
@@ -272,10 +289,10 @@
               data-carousel-item="active"
             >
               <!--                <img
-                                                            src="/docs/images/carousel/carousel-1.svg"
-                                                            class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                                                            alt="..."
-                                                          />-->
+                                                                                    src="/docs/images/carousel/carousel-1.svg"
+                                                                                    class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                                                                    alt="..."
+                                                                                  />-->
               <img
                 class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                 src="/base-vite-tailwind-flowbite/assets/logo2-960f3e33.png"
