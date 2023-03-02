@@ -123,18 +123,6 @@
     @apply flex flex-col items-center justify-center gap-y-[10px];
   }
 
-  .first-banner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0.5rem;
-    width: 100%;
-    height: 20.313rem;
-    color: var(--text-rose-default);
-    background-color: var(--background-rose-default);
-  }
-
   .formatar {
     @apply format lg:format-lg;
   }
