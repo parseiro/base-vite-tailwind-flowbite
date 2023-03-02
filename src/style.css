@@ -11,6 +11,7 @@
                     --background-rose-smooth: rgba(242, 206, 206, 0.2);
                   }*/
   body {
+    @apply px-3 md:p-0;
     @apply mx-auto max-w-screen-xl bg-rose-smooth bg-opacity-15;
   }
 
