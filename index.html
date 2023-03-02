@@ -5,14 +5,14 @@
     <!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GEEON</title>
-    <script type="module" crossorigin src="/base-vite-tailwind-flowbite/assets/index-d4c8b577.js"></script>
-    <link rel="stylesheet" href="/base-vite-tailwind-flowbite/assets/index-54fb4e35.css">
+    <script type="module" crossorigin src="/base-vite-tailwind-flowbite/assets/index-817be35d.js"></script>
+    <link rel="stylesheet" href="/base-vite-tailwind-flowbite/assets/index-4b1fe2d1.css">
   </head>
   <body>
     <header>
       <!-- Primeiro header -->
       <nav
-        class="mx-auto flex h-[3.875rem] items-center justify-between bg-rose-background2 bg-opacity-50 px-4 py-0 shadow-lg md:h-16 md:px-6"
+        class="mx-auto flex items-center justify-between bg-rose-background2 bg-opacity-50 py-0 shadow-lg md:h-16 md:px-4"
       >
         <div
           class="hidden gap-x-3 md:block md:flex md:items-center md:justify-between md:gap-x-6"
@@ -46,7 +46,7 @@
           /></a>
         </div>
 
-        <div class="flex items-center justify-between">
+        <div class="flex w-screen flex-wrap items-center justify-between">
           <button
             data-collapse-toggle="navbar-default"
             aria-controls="navbar-default"
@@ -69,8 +69,13 @@
               ></path>
             </svg>
           </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="menu-item-ul">
+          <div
+            class="z-50 hidden w-full md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 text-lg md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:text-lg lg:text-xl"
+            >
               <li>
                 <a href="#" class="menu-item-button"
                   >Resultados e Transparência</a
@@ -105,7 +110,7 @@
           <a href="/">
             <img
               class="w-full object-cover"
-              src="/base-vite-tailwind-flowbite/assets/logo-92baf201.png"
+              src="/base-vite-tailwind-flowbite/assets/logo2-960f3e33.png"
               alt="geeon-logo"
             />
           </a>
@@ -137,7 +142,7 @@
       <section id="servicos_medicos">
         <img src="/base-vite-tailwind-flowbite/assets/outubro rosa-d622e1bd.png" alt="Logo da Geeon" />
         <h2 class="titulo_de_secao">Serviços Médicos do Geeon</h2>
-        <div>
+        <article>
           <img
             src="/base-vite-tailwind-flowbite/assets/mamografia-5abf6772.png"
             alt="imagem sobre exames de mamografia"
@@ -153,8 +158,8 @@
               realizadas 8.768 mamografias
             </p>
           </div>
-        </div>
-        <div>
+        </article>
+        <article>
           <div class="text-right">
             <h3>Consulta com mastologista</h3>
             <p>
@@ -169,8 +174,8 @@
             src="/base-vite-tailwind-flowbite/assets/mastologista-fcad1b8b.png"
             alt="imagem sobre consulta com mastologista"
           />
-        </div>
-        <div>
+        </article>
+        <article>
           <img src="/base-vite-tailwind-flowbite/assets/biopsia-27869444.png" alt="imagem sobre biópsia" />
           <div>
             <h3>Biópsia</h3>
@@ -181,8 +186,8 @@
               realizadas 908 Biópsia e punções
             </p>
           </div>
-        </div>
-        <div>
+        </article>
+        <article>
           <div class="text-right">
             <h3 class="text-right">Ultrasom mamárias</h3>
             <p>
@@ -197,10 +202,9 @@
             src="/base-vite-tailwind-flowbite/assets/us-mamas-36cab13d.png"
             alt="imagem sobre ultrasson mamárias"
           />
-        </div>
+        </article>
       </section>
     </main>
-    
     
   </body>
 </html>
