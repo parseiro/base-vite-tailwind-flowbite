@@ -124,16 +124,6 @@
     @apply flex flex-col items-center justify-center gap-[11px]  py-10;
   }
 
-  .secao > article .secao h2 {
-    /*@apply text-3xl font-bold  md:text-7xl;*/
-    @apply text-rose-default;
-  }
-
-  .secao h3 {
-    /*@apply text-2xl font-bold;*/
-    @apply text-rose-default;
-  }
-
   .secao p {
     /*@apply max-w-screen-sm text-2xl text-rose-text;*/
     /*@apply format;*/
