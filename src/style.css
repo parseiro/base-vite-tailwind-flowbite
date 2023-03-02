@@ -4,12 +4,12 @@
 
 @layer components {
   /*:root {
-                  --body: #fff;
-                  --text-rose-default: rgb(166, 51, 82);
-                  --background-rose-strong: rgb(252, 4, 165);
-                  --background-rose-default: rgba(217, 145, 158, 0.5);
-                  --background-rose-smooth: rgba(242, 206, 206, 0.2);
-                }*/
+                    --body: #fff;
+                    --text-rose-default: rgb(166, 51, 82);
+                    --background-rose-strong: rgb(252, 4, 165);
+                    --background-rose-default: rgba(217, 145, 158, 0.5);
+                    --background-rose-smooth: rgba(242, 206, 206, 0.2);
+                  }*/
   body {
     @apply mx-auto max-w-screen-xl bg-rose-smooth bg-opacity-15;
   }
@@ -119,38 +119,28 @@
     @apply hidden;
   }
 
-  .titulo_de_secao {
+  .secao {
+    @apply format lg:format-lg;
+    @apply flex flex-col items-center justify-center gap-[11px]  py-10;
+  }
+
+  .secao > article .secao h2 {
     /*@apply text-3xl font-bold  md:text-7xl;*/
-    @apply mb-7 text-rose-default md:mb-14;
+    @apply text-rose-default;
   }
 
-  #servicos_medicos {
-    @apply flex flex-col items-center justify-center gap-[11px];
-  }
-
-  /*  #servicos_medicos > * {
-      @apply format lg:format-lg;
-    }*/
-  #servicos_medicos > article {
-    @apply flex items-center justify-center;
-  }
-
-  #servicos_medicos > article > div {
-    @apply format;
-  }
-
-  #servicos_medicos > article > div > h3 {
+  .secao h3 {
     /*@apply text-2xl font-bold;*/
     @apply text-rose-default;
   }
 
-  #servicos_medicos > article > div > p {
+  .secao p {
     /*@apply max-w-screen-sm text-2xl text-rose-text;*/
     /*@apply format;*/
     @apply text-rose-text;
   }
 
-  #servicos_medicos > article > img {
+  .secao > img {
     @apply hidden md:m-7 md:block md:h-[159px] md:w-[152px];
   }
 }
