@@ -2,7 +2,7 @@
 module.exports = {
     content: [
         "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
+        "./src/**/*.{html,js,ts,jsx,tsx}",
         "node_modules/flowbite/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
@@ -62,5 +62,8 @@ module.exports = {
                     }*/
     },
     darkMode: "class",
-    plugins: [require("flowbite/plugin"), require("flowbite-typography")],
+    plugins: [
+        require('flowbite-typography'),
+        require("flowbite/plugin"),
+    ],
 };
