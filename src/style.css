@@ -141,7 +141,6 @@
 
   #servicos_medicos > article > div > h3 {
     /*@apply text-2xl font-bold;*/
-    @apply format;
     @apply text-rose-default;
   }
 
